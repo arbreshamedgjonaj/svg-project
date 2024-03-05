@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="images/stopsign.svg">
+    
     <title>SVG</title>
 </head>
 <body>
+    <link rel="stylesheet" href="images/stopsign.svg">
     <main>
         <svg width="512" height="512" viewbox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg"> 
             <circle cx="110" cy="110" r="100"  fill="rgb(223, 208, 128)" s/>
             <polyline points="70,150 150,150 " stroke="rgb(209, 209, 2)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>  
             <polyline points="50,70 90,70 " stroke="orange" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>  
             <polyline points="130,70 170,70 " stroke="orange" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>  
+        </svg >
+        <svg width="512" height="512" viewbox="0 0 240 240">
+        <use href="images/stopsign.svg#stop-sign"></use>
         </svg>
-        <!--<svg> I tried to link it like in the video, but it did not work
-            <use xlink:href="images/stopsign.svg#stop-sign"></use>
-        </svg-->
-       <img src="images/stopsign.svg" alt="Stop Sign">
         </main>
 </body>
 </html>
